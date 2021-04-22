@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <span>Rock</span>
+        <span>Paper</span>
+        <span>Scissors</span>
+      </h1>
+      <div class="score-container">
+        <h4>Score</h4>
+        <p id="score">0</p>
+      </div>
+    </header>
+
+    <main id="main">
+      <button class="btn-circle btn-paper pick"
+      data-choice="paper">
+        <span class="wraper">
+          <img src="./images/icon-paper.svg" alt="paper icon">
+        </span>
+      </button>
+      <button class="btn-circle btn-scissors pick"
+      data-choice="scissors">
+        <span class="wraper"><img src="./images/icon-scissors.svg" alt="scissors icon">
+        </span>
+      </button>
+      <button class="btn-circle btn-rock pick"
+      data-choice="rock">
+        <span class="wraper"><img src="./images/icon-rock.svg" alt="rock icon">
+        </span>
+      </button>
+    </main>
+
+    <div class="rule" id="ruleForm">
+      <div class="flex-between">
+        <h2>Rules</h2>
+        <button id="close-rule">
+          <img src="./images/icon-close.svg" alt="">
+        </button>
+      </div>
+      <div class="img-rule">
+        <img src="./images/image-rules.svg" alt="">
+      </div>
+    </div>
+
+    <button id="ruleButton" class="btn-rules">Rules</button>
+  </div>
+
+  <div class="selection" id="selection">
+
+    <!-- will get the elements from js -->
+
+  </div>
+
+  <button class="btn" id="rest">Play Agin</button>
+</body>
+</html>
